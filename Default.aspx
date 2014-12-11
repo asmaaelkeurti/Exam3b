@@ -10,18 +10,17 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:Button ID="Button1" runat="server" Text="Button" meta:resourceKey="Button1"/>
+        <asp:Panel ID="Panel1" runat="server" Width="256px">
+        </asp:Panel>
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Label" meta:resourceKey="Label1"></asp:Label>
+        <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="true">
+            <asp:ListItem Value="en">english</asp:ListItem>
+            <asp:ListItem Value="es">spanish</asp:ListItem>
+        </asp:RadioButtonList>
     
         <br />
-        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
         <br />
-        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true">
-            <asp:ListItem Value="en">English</asp:ListItem>
-            <asp:ListItem Value="es">Spanish</asp:ListItem>
-        </asp:DropDownList>
-        <asp:Label ID="currencyLabel1" runat="server"></asp:Label>
+        <asp:Button ID="Button1" runat="server" Text="Button" meta:resourceKey="Button1" />
     
     </div>
     </form>

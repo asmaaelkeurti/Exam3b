@@ -117,10 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Button1.Text" xml:space="preserve">
-    <value>english</value>
+  <data name="Hello" xml:space="preserve">
+    <value>¡Hola, </value>
   </data>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>english</value>
+  <data name="label10" xml:space="preserve">
+    <value>como un salario en su primer trabajo!</value>
+  </data>
+  <data name="Label5" xml:space="preserve">
+    <value>Espero que tengas un gran día cuando se gradúe en</value>
+  </data>
+  <data name="Label6" xml:space="preserve">
+    <value>Te deseo lo mejor en su carrera después de la graduación. Espero que gane</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>Por favor, visite conmigo en</value>
+  </data>
+  <data name="suffixFemale" xml:space="preserve">
+    <value>Sra.</value>
+  </data>
+  <data name="suffixMale" xml:space="preserve">
+    <value>Sr.</value>
   </data>
 </root>
