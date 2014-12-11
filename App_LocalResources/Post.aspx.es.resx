@@ -138,4 +138,10 @@
   <data name="label8.Text" xml:space="preserve">
     <value>Tengo la intención de graduarse en:</value>
   </data>
+  <data name="RegularExpressionValidator1.ErrorMessage" xml:space="preserve">
+    <value>Por favor, introduzca los números</value>
+  </data>
+  <data name="RequiredFieldValidator1.ErrorMessage" xml:space="preserve">
+    <value>necesario</value>
+  </data>
 </root>

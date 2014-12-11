@@ -9,9 +9,11 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="true">
-            <asp:ListItem Value="en">english</asp:ListItem>
-            <asp:ListItem Value="es">spanish</asp:ListItem>
+        <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="true" >
+            <asp:ListItem Value="en">English</asp:ListItem>
+            <asp:ListItem Value="es">Spanish</asp:ListItem>
+            <asp:ListItem Value="ar">Arabic</asp:ListItem>
+            <asp:ListItem Value="Zh">Chinese</asp:ListItem>
         </asp:RadioButtonList>
 
         <asp:Panel ID="Panel1" runat="server" Height="16px">
@@ -24,10 +26,17 @@
             <asp:RadioButton ID="Male" runat="server" GroupName="sex" meta:resourcekey="radio2"/>
             <br />
             <asp:Label ID="Label8" runat="server" meta:resourcekey="label8"></asp:Label>
-            <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+            <asp:Calendar ID="Calendar1" runat="server" SelectedDate="<%# DateTime.Today %>"></asp:Calendar>
             <br />
-            <asp:Label ID="Label3" runat="server" meta:resourcekey="label3"></asp:Label>
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:Label ID="Label3" runat="server" meta:resourcekey="label3" ></asp:Label>
+            <asp:TextBox ID="TextBox2" runat="server" meta:resourcekey="textBox2"></asp:TextBox><asp:RegularExpressionValidator id="RegularExpressionValidator1"
+                    style="color:red;"
+                   ControlToValidate="TextBox2"
+                Display="Dynamic"
+                   ValidationExpression="\d+"
+                   EnableClientScript="true"
+                meta:resourcekey="RegularExpressionValidator1"
+                   runat="server"/><asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="TextBox2" style="color:red;" Display="Dynamic" runat="server" meta:resourcekey="RequiredFieldValidator1"></asp:RequiredFieldValidator>
             <br />
             <asp:Button ID="Button1" runat="server"  meta:resourcekey="Button1"/>
         </asp:Panel>

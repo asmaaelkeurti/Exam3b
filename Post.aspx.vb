@@ -26,11 +26,19 @@ Partial Class Post
 
         Label4.Text = Resources.Resource.Hello + suffix + TextBox1.Text
 
-        Label5.Text = Resources.Resource.Label5 + Calendar1.SelectedDate.ToShortDateString()
+        Try
+            Label5.Text = Resources.Resource.Label5 + Calendar1.SelectedDate.ToShortDateString()
+        Catch ex As Exception
+
+        End Try
+
+
+
+
 
         Label6.Text = Resources.Resource.Label6
         Label9.Text = String.Format("{0:C}", Convert.ToDouble(TextBox2.Text))
-        Label10.Text = Resources.Resource.Label10
+        Label10.Text = Resources.Resource.label10
 
         Label7.Text = Resources.Resource.label7
     End Sub
@@ -41,4 +49,5 @@ Partial Class Post
             Button1_Click(Button1, New EventArgs())
         End If
     End Sub
+
 End Class

@@ -117,7 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Button1.Text" xml:space="preserve">
-    <value>spanish</value>
+  <data name="Hello" xml:space="preserve">
+    <value>您好，</value>
+  </data>
+  <data name="label10" xml:space="preserve">
+    <value>在你的第一份工作的薪水！</value>
+  </data>
+  <data name="Label5" xml:space="preserve">
+    <value>我希望你有一个伟大的日子，当你毕业的</value>
+  </data>
+  <data name="Label6" xml:space="preserve">
+    <value>祝你顺利毕业后，你的职业生涯。我希望你赚</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>请访问我的</value>
+  </data>
+  <data name="suffixFemale" xml:space="preserve">
+    <value>女士.</value>
+  </data>
+  <data name="suffixMale" xml:space="preserve">
+    <value>先生.</value>
   </data>
 </root>
