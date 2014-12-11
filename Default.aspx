@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Post.aspx.vb" Inherits="Post" Culture="auto:en-Us" UICulture="auto" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="Post" Culture="auto:en-Us" UICulture="auto" %>
 
 <!DOCTYPE html>
 
@@ -6,26 +6,30 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body style="width:80%;margin:auto;">
     <form id="form1" runat="server">
     <div>
-        <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="true" >
+        <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="true" style="display:inline-block; Width:110px;float:left;height:600px;border-right-color:black;border-right-style:double;margin-right:10px;">
             <asp:ListItem Value="en">English</asp:ListItem>
             <asp:ListItem Value="es">Spanish</asp:ListItem>
             <asp:ListItem Value="ar">Arabic</asp:ListItem>
             <asp:ListItem Value="Zh">Chinese</asp:ListItem>
         </asp:RadioButtonList>
 
-        <asp:Panel ID="Panel1" runat="server" Height="16px">
+        <asp:Panel ID="Panel1" runat="server" Height="16px" Width="800px">
             <br />
             <asp:Label ID="Label1" runat="server" meta:resourcekey ="Label1"></asp:Label>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br />
             <br />
             <asp:Label ID="Label2" runat="server" meta:resourcekey="label2"></asp:Label>
             <asp:RadioButton ID="Female" runat="server" GroupName="sex" meta:resourcekey="radio1"/>
             <asp:RadioButton ID="Male" runat="server" GroupName="sex" meta:resourcekey="radio2"/>
             <br />
+            <br />
             <asp:Label ID="Label8" runat="server" meta:resourcekey="label8"></asp:Label>
+            <br />
+            <br />
             <asp:Calendar ID="Calendar1" runat="server" SelectedDate="<%# DateTime.Today %>"></asp:Calendar>
             <br />
             <asp:Label ID="Label3" runat="server" meta:resourcekey="label3" ></asp:Label>
@@ -37,6 +41,7 @@
                    EnableClientScript="true"
                 meta:resourcekey="RegularExpressionValidator1"
                    runat="server"/><asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="TextBox2" style="color:red;" Display="Dynamic" runat="server" meta:resourcekey="RequiredFieldValidator1"></asp:RequiredFieldValidator>
+            <br />
             <br />
             <asp:Button ID="Button1" runat="server"  meta:resourcekey="Button1"/>
         </asp:Panel>
